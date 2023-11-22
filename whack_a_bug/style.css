@@ -1,0 +1,82 @@
+:root{
+  --cell-size: 120px;
+  --cell-gutter: 60px;
+}
+
+#grid{
+  width: calc(var(--cell-size) * 3 + var(--cell-gutter));
+  height: calc(var(--cell-size) * 3 + var(--cell-gutter));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.board{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+h1{
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 33%;
+}
+
+h5{
+  position: absolute;
+  top: 80%;
+  left: 3.5%;
+}
+h2{
+  position: absolute;
+  top: 85%;
+  left: 3%;
+}
+#video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.cell{
+  height: var(--cell-size);
+  width: var(--cell-size);
+  background-color: #ffffff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.bug{
+  background-image: url('hamza.png');
+}
+
+.splat{
+  background-image: url('bug-splat.png');
+}
+
+h3{
+  margin-bottom: 12px;
+}
+
+img{
+  position: absolute;
+  top:78.5%;
+  left:39.5%;
+  opacity: 0.5;
+}
+
+button{
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  padding: 10px 15px;
+}

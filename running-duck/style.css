@@ -1,0 +1,61 @@
+:root {
+    --road-size: 60px;
+}
+
+#grid {
+    width: calc(var(--road-size) * 10);
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 3px solid white;
+}
+
+#grid > div {
+    width: var(--road-size);
+    height: var(--road-size);
+}
+
+.board{
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+  }
+
+.duck {
+    background-image: url('./images/duck.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+.duck-jump {
+    transform: translate(0, -120%);
+}
+
+.plant:not(.duck) {
+    background-image: url('./images/plant.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.hm{
+    position: absolute;
+    top:78.5%;
+    left:39.5%;
+    opacity: 0.5;
+  }
+  h1{
+    text-align: center;
+    position: absolute;
+    top: -15%;
+    left: 13%;
+  }
+  
+  h3{
+    position: absolute;
+    top: 25%;
+    left: 2%;
+  }  

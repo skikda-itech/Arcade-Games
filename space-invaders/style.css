@@ -1,0 +1,62 @@
+:root {
+    --cell-size: 35px;
+    --grid-size: 15;
+}
+
+#grid{
+  width: calc(var(--cell-size) * var(--grid-size) + 4px);
+  height: calc(var(--cell-size) * var(--grid-size) + 4px);
+  border: 2px solid white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#grid > div{
+  width: var(--cell-size);
+  height: var(--cell-size);
+  font-size: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.board{
+  position: absolute;
+  top: 48%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+}
+
+.alien{
+  background-image: url('./images/alien.png');
+}
+
+.spaceship{
+  background-image: url('./images/I_Tech_SpaceShip.png');
+}
+
+.laser{
+  background-image: url('./images/laser.png');
+}
+
+.boom{
+  background-image: url('./images/boom.png');
+}
+.hm{
+  position: absolute;
+  top:83%;
+  left:39.5%;
+  opacity: 0.5;
+}
+h1{
+  text-align: center;
+  position: absolute;
+  top: -9%;
+  left: 3%;
+}
+
+h3{
+  position: absolute;
+  top: 90%;
+  left: -39%;
+}

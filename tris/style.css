@@ -1,0 +1,55 @@
+:root{
+  --cell-size: 120px;
+  --cell-gutter: 30px;
+}
+
+#grid{
+  width: calc((var(--cell-size) + var(--cell-gutter)) * 3);
+  height: calc((var(--cell-size) + var(--cell-gutter)) * 3);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.hm{
+  position: absolute;
+  top:78.5%;
+  left:39.5%;
+  opacity: 0.5;
+}
+
+.board{
+  position: absolute;
+  top: 47.5%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+}
+.cell{
+  height: var(--cell-size);
+  width: var(--cell-size);
+  border: 4px solid #fff;
+  cursor: pointer;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  text-align: center;
+  position: absolute;
+  top: -13%;
+  left: 5.5%;
+}
+
+h5{
+  position: absolute;
+  top: 80%;
+  left: 3.5%;
+}
+h2{
+  position: absolute;
+  top: 85%;
+  left: 3%;
+}
